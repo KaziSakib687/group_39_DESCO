@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.user2.DocumentVerification">
+   <children>
+      <Text layoutX="117.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application ID:" />
+      <TextField layoutX="239.0" layoutY="69.0" />
+      <TableView layoutX="117.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="195.0" layoutY="24.0" text="Document Verification" />
+   </children>
+</AnchorPane>
