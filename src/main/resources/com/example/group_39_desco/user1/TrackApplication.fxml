@@ -6,15 +6,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.user1.TracckApplication">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.controller.user1.TrackApplicationController">
    <children>
       <Text layoutX="71.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application ID:" wrappingWidth="77.6015625" />
       <Text layoutX="99.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <TextField layoutX="166.0" layoutY="55.0" />
-      <Button layoutX="149.0" layoutY="100.0" mnemonicParsing="false" text="Search" />
+      <TextField fx:id="applicationidTextField" layoutX="166.0" layoutY="55.0" />
+      <Button layoutX="149.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" />
       <Label layoutX="161.0" layoutY="162.0" />
       <Text layoutX="60.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application Status:" />
-      <TextField layoutX="175.0" layoutY="150.0" />
+      <TextField fx:id="applicationstatusTextField" layoutX="175.0" layoutY="150.0" />
+      <Label fx:id="trackapplicationLabel" layoutX="250.0" layoutY="21.0" text="Track Application" />
    </children>
 </AnchorPane>

@@ -4,15 +4,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.user1.CustomerDashboard">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.controller.user1.CustomerDashboardController">
    <children>
-      <Label layoutX="244.0" layoutY="50.0" text="Welcome" />
-      <Button layoutX="53.0" layoutY="77.0" mnemonicParsing="false" text="Apply New Connection" />
-      <Button layoutX="340.0" layoutY="77.0" mnemonicParsing="false" text="Track Application" />
-      <Button layoutX="53.0" layoutY="147.0" mnemonicParsing="false" text="Pay Bill" />
-      <Button layoutX="53.0" layoutY="187.0" mnemonicParsing="false" text="Billing History" />
-      <Button layoutX="54.0" layoutY="232.0" mnemonicParsing="false" text="Complaint" />
-      <Button layoutX="54.0" layoutY="279.0" mnemonicParsing="false" text="Logout" />
+      <Label fx:id="welcomeLabel" layoutX="244.0" layoutY="50.0" text="Welcome" />
+      <Button layoutX="53.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleApplyNewConnection" text="Apply New Connection" />
+      <Button layoutX="340.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleTrackApplication" text="Track Application" />
+      <Button layoutX="53.0" layoutY="147.0" mnemonicParsing="false" onAction="#handlePayBill" text="Pay Bill" />
+      <Button layoutX="53.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleBillingHistory" text="Billing History" />
+      <Button layoutX="54.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleComplaint" text="Complaint" />
+      <Button layoutX="54.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
    </children>
 </AnchorPane>

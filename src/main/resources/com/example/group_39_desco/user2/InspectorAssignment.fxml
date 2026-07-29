@@ -8,18 +8,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.user2.InspectorAssignment">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.controller.user2.InspectorAssignmentController">
    <children>
-      <Label layoutX="209.0" layoutY="42.0" text="Inspector Assignment" />
+      <Label fx:id="inspectorassignmentLabel" layoutX="209.0" layoutY="42.0" text="Inspector Assignment" />
       <Text layoutX="80.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application ID:" />
       <Text layoutX="74.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name:" />
-      <ComboBox layoutX="80.0" layoutY="155.0" prefWidth="150.0" promptText="Inspector" />
-      <DatePicker layoutX="212.0" layoutY="200.0" />
-      <Button layoutX="205.0" layoutY="280.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="313.0" layoutY="280.0" mnemonicParsing="false" text="Button" />
-      <TextField layoutX="174.0" layoutY="84.0" />
-      <TextField layoutX="175.0" layoutY="120.0" />
+      <ComboBox fx:id="inspectorComboBox" layoutX="80.0" layoutY="155.0" prefWidth="150.0" promptText="Inspector" />
+      <DatePicker fx:id="inspectiondateDatepicker" layoutX="212.0" layoutY="200.0" />
+      <Button layoutX="205.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
+      <Button layoutX="313.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+      <TextField fx:id="applicationidTextfield" layoutX="174.0" layoutY="84.0" />
+      <TextField fx:id="customernameTextfield" layoutX="175.0" layoutY="120.0" />
       <Text layoutX="96.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inspection Date:" />
    </children>
 </AnchorPane>

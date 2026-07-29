@@ -7,17 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.user2.DocumentVerification">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.controller.user2.DocumentVerificationController">
    <children>
       <Text layoutX="117.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application ID:" />
-      <TextField layoutX="239.0" layoutY="69.0" />
-      <TableView layoutX="117.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0">
+      <TextField fx:id="applicationidTextfield" layoutX="239.0" layoutY="69.0" />
+      <TableView fx:id="doccumentverificationTabileView" layoutX="117.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="applicationidCol" prefWidth="104.00006103515625" text="Application Id" />
+          <TableColumn fx:id="doccumentCol" prefWidth="94.4000244140625" text="Doccument" />
         </columns>
       </TableView>
-      <Label layoutX="195.0" layoutY="24.0" text="Document Verification" />
+      <Label fx:id="doccumentverificationLabel" layoutX="195.0" layoutY="24.0" text="Document Verification" />
    </children>
 </AnchorPane>

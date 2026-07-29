@@ -7,14 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="305.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.user2.OperatorLogin">
+<AnchorPane prefHeight="305.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.controller.user2.OperatorLoginController">
    <children>
-      <Label layoutX="212.0" layoutY="44.0" text="DESCO Service Operator" />
+      <Label fx:id="descoserviceoperatorLabel" layoutX="212.0" layoutY="44.0" text="DESCO Service Operator" />
       <Text layoutX="83.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operator ID:" />
       <Text layoutX="83.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
-      <TextField layoutX="166.0" layoutY="87.0" />
-      <PasswordField layoutX="166.0" layoutY="131.0" />
-      <Button layoutX="251.0" layoutY="200.0" mnemonicParsing="false" text="Login" />
+      <TextField fx:id="operatoridTextField" layoutX="166.0" layoutY="87.0" />
+      <PasswordField fx:id="passwordTextField" layoutX="166.0" layoutY="131.0" />
+      <Button layoutX="251.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
    </children>
 </AnchorPane>

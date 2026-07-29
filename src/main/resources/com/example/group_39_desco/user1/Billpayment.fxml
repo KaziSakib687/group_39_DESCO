@@ -2,19 +2,21 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="461.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.user1.Billpayment">
+<AnchorPane prefHeight="461.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_39_desco.controller.user1.BillpaymentController">
    <children>
       <Text layoutX="107.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill ID:" />
       <Text layoutX="107.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount:" />
       <Text layoutX="108.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Method:" />
-      <TextField layoutX="157.0" layoutY="77.0" />
-      <ComboBox layoutX="222.0" layoutY="171.0" prefWidth="150.0" />
-      <Button layoutX="114.0" layoutY="251.0" mnemonicParsing="false" text="Pay Now" />
-      <Button layoutX="307.0" layoutY="251.0" mnemonicParsing="false" text="Download Recipt" />
+      <TextField fx:id="billidTextfield" layoutX="157.0" layoutY="77.0" />
+      <ComboBox fx:id="paymentmethodComboBox" layoutX="222.0" layoutY="171.0" prefWidth="150.0" />
+      <Button layoutX="114.0" layoutY="251.0" mnemonicParsing="false" onAction="#handlePayNow" text="Pay Now" />
+      <Button layoutX="307.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleDownloadRecipt" text="Download Recipt" />
+      <Label fx:id="billpaymentLabel" layoutX="289.0" layoutY="32.0" text="Bill Payment" />
+      <TextField fx:id="amountTextfield" layoutX="177.0" layoutY="124.0" />
    </children>
 </AnchorPane>
